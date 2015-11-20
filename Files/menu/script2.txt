@@ -1,0 +1,15 @@
+<a href="javascript:void(0);" class="menu-trigger">Menu</a>
+
+<script>
+        $(document).ready(function () {
+            $('.menu-trigger').click(function () {
+                $(this).parent('nav').find('ul').slideToggle(500);
+            }); //end slide toggle
+
+            $(window).resize(function () {
+                if ($(window).width() > 500) {
+                    $('nav ul').removeAttr('style');
+                }
+            }); //end resize
+        }); //end ready
+</script>

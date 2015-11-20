@@ -1,0 +1,403 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(fonts/BebasNeue-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'DoppioOne';
+    src: url(fonts/DoppioOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.left {float: left;}
+.right {float: right;}
+
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+.ovh {overflow: hidden;}
+
+a {text-decoration: none;}
+
+.wrapper {
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    height: 1980px;
+    width: 100%;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 37px;
+}
+
+header {
+    background: #181818;
+    border-radius: 3px;
+    height: 58px;
+}
+
+.logo {
+    width: 116px;
+    height: 58px;
+    margin-left: 10px;
+}
+
+.top-menu a {
+    display: inline-block;
+    color: #fff;
+    font: 14px 'DoppioOne', sans-serif;
+    text-transform: uppercase;
+    margin: 15px 21px 0 0;
+    padding: 5px 12px;
+}
+
+.top-menu a:hover {
+    background: #8f746c;
+    padding: 5px 12px;
+    border-radius: 3px;
+}
+
+.top-banner {
+    background: url(images/bike-main-top.jpg) no-repeat;
+    height: 559px;
+    padding-top: 156px;
+}
+
+.top-banner .text1,
+.top-banner .text2,
+.top-banner .text3 {
+    color: #fdfdfd;
+    font: 61px/56px 'BebasNeue', sans-serif;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.19);
+}
+
+.top-banner .text2 {
+    font-size: 59px;
+}
+
+.top-banner .text3 {
+    font-size: 69px;
+}
+
+.little-banners {
+    margin: 94px 0 0 252px;
+}
+
+.top-banner .little-banner1 {
+    width: 153px;
+    height: 109px;
+}
+
+.top-banner .little-banner2 {
+    margin: 0 15px 0 16px;
+    width: 109px;
+    height: 109px;
+}
+
+.top-banner .little-banner3 {
+    width: 184px;
+    height: 109px;
+}
+
+.content {background: #fff; height: 1074px;}
+
+.content .bike {
+    margin: 30px 0 0 22px;
+    width: 387px;
+    height: 236px;
+}
+
+.content .sale {
+    position: relative;
+    background: #E4DBD8;
+    height: 296px;
+    width: 524px;
+}
+
+.content .sale:before {
+	content: '';
+    position: absolute; top: 40px; right: 100%;
+    widt: 0;
+    heigh: 0;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #E4DBD8 transparent transparent;
+}
+
+.content .sale2 {
+    font: 211px/135px 'BebasNeue';
+    opacity: 0.05;
+}
+
+.sale .price {
+    color: #000;
+    font: 90px 'BebasNeue';
+    position: absolute; top: 83px; left: 38px;
+}
+
+.content .name {
+    position: absolute; top: 23px; left: 36px;
+    font: 19px 'DoppioOne';
+}
+
+.content .author {
+    position: absolute; top: 49px; left: 37px;
+    color: #987f77;
+    font: italic 0.75em 'DoppioOne';
+}
+
+.content .ask {
+    margin: 114px 0 0 38px;
+    font: 0.75em 'DoppioOne';
+}
+
+.sale a {color: #000;}
+
+input[name="button"] {
+    position: absolute; left: 35px; bottom: 67px;
+    width: 232px;
+    height: 44px;
+    border: 3px solid #987f77;
+    color: #987f77;
+    font: 0.813em 'DoppioOne';
+    text-transform: uppercase;
+    background: #e6ddda;
+    cursor: pointer;
+}
+
+.sale .rating {
+    position: absolute; right: 151px; bottom: 82px;
+    color: black;
+    font: 0.75em 'DoppioOne';
+}
+
+.rating2 .fa {
+    width: 14px;
+    height: 14px;
+    background-color: #f1a42a;
+}
+
+.rating2 span {
+    color: #f1a42a;
+}
+
+.content .bg {
+    position: absolute;
+    width: 8.188em;
+    height: 7.75em;
+}
+
+.bg .bg2 {
+    position: absolute; top: 37px; left: 11px;
+    transform: rotate(-43deg);
+    color: #fff;
+    font: 24px 'BebasNeue';
+}
+
+.sale .rating2 {
+    position: absolute; bottom: 79px; right: 48px;
+}
+
+.r1, .r2, .r3, .r4, .r5 {
+    width: 14px;
+    height: 14px;
+    background: url(images/2.png) no-repeat;
+    display: inline-block;
+}
+.content3 {
+    height: 263px;
+    margin: 316px 0 57px;
+}
+
+.content3 .bike1 {
+    position: relative;
+    width: 227px;
+    height: 131px;
+    margin: 31px 0 0 25px;
+}
+
+.content3 .bike2 {
+    position: relative;
+    width: 226px;
+    height: 151px;
+    margin: 13px 0 0 46px;
+}
+
+.content3 .bike3 {
+    position: relative;
+    width: 239px;
+    height: 158px;
+    margin: 20px 0 0 36px;
+}
+
+.content3 .bike4 {
+    position: relative;
+    width: 144px;
+    height: 176px;
+    margin-left: 37px;
+}
+
+.content3 .slider {
+    position: absolute; top: 61px; right: 22px;
+    width: 2.938em;
+    height: 4.688em;
+    opacity: 0.57;
+    background: #e6ddda;
+}
+
+.slider .slider2 {
+    width: 1.5em;
+    height: 2.75em;
+    margin: 16px 9px 15px 14px;
+    cursor: pointer;
+}
+
+.content3 .font {
+    color: #000;
+    font: 14px 'DoppioOne';
+}
+
+.bike1 .sbicycle{
+	position: absolute; top: 156px; left: 9px;
+}
+
+.bike2 .cbicycle {
+    position: absolute; top: 174px; left: 0px;
+}
+
+.bike3 .rbicycle {
+    position: absolute; left: 12px; top: 167px;
+}
+
+.bike4 .cbicycle2 {
+    position: absolute; top: 187px; left: 0px;
+}
+
+.content3 .font2 {
+    color: #000;
+    font: italic 11px/16px 'DoppioOne';
+}
+
+.bike1 .author2 {
+    position: absolute; left: 10px; top: 174px;
+}
+
+.bike2 .author3 {
+    position: absolute; left: 1px; top: 192px;
+}
+
+.bike3 .author4 {
+    position: absolute; top: 185px; left: 12px;
+}
+
+.bike4 .author5 {
+    position: absolute; top: 205px; left: 1px;
+}
+
+.content3 .font3 {
+    color: #000;
+    font: 25px 'BebasNeue';
+}
+
+.bike1 .price2{
+	position: absolute; right: 9px; top: 160px;
+}
+
+.bike2 .price3{
+	position: absolute; top: 178px; right: 6px;
+}
+
+.bike3 .price4{
+	position: absolute; top: 171px; right: 19px;
+}
+
+.bike4 .price5{
+	position: absolute; top: 190px; left: 120px;
+}
+
+input[name="bike1"],
+input[name="bike2"],
+input[name="bike3"],
+input[name="bike4"]{
+    position: absolute; top: 197px; left: 9px;
+    width: 167px;
+    height: 35px;
+    border: 2px solid #987f77;
+    color: #987f77;
+    font: 0.75em 'DoppioOne';
+    text-transform: uppercase;
+    background: #fff;
+    cursor: pointer;
+}
+
+input[name="bike2"] {
+    position: absolute; left: 0px; top: 215px;
+}
+
+input[name="bike3"] {
+    position: absolute; left: 11px; top: 208px;
+}
+
+input[name="bike4"] {
+    position: absolute; left: 0px; top: 228px;
+}
+.bottom-banner {
+    background: url(images/bg-bottom.jpg) no-repeat;
+    height: 364px;
+    border-top: 2px solid #e4dbd8;
+    border-bottom: 2px solid #e4dbd8;
+}
+
+input[name="bshop"] {
+    margin: 165px 0 0 378px;
+    width: 243px;
+    height: 54px;
+    border: 3px solid white;
+    color: white;
+    font: 28px 'DoppioOne';
+    text-transform: uppercase;
+    background: url(images/Browse-shop.png) no-repeat 50% 50%; /* xD */
+    cursor: pointer;
+}
+
+.bottom-menu a {
+    display: inline-block;
+    color: #000;
+    font: 12px/17px 'DoppioOne';
+    text-transform: uppercase;
+    margin: 25px 21px 0 0;
+    padding: 5px 12px;
+}
+
+.bottom-menu a:hover {
+    padding: 5px 12px;
+    background: #e4dbd8;
+    border-radius: 3px;
+}
+
+.payments {
+    margin: 19px 4px 0 0;
+}
+
+.payments a:last-child {
+    margin-right: 0;
+}
+
+.payments img {
+    width: 43px;
+    height: 29px;
+}

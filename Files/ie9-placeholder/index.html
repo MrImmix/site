@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Заставить работать palceholder в IE9</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style> .placeholdr { color: gray } </style>
+</head>
+<body>
+<div class="wrapper">
+	<h1>Заставить работать palceholder в IE9</h1>
+	<hr>
+	<p>Во все пустые текстовые поля с атрибутом placeholder js-скрипт подставит этот текст в качестве параметра value. При клике в поле текст будет убираться, цвет набираемого текста поменяется с серого на черный.</p>
+	<input type="text" value="" placeholder="Ваше имя"><br>
+	<input type="text" value="" placeholder="E-mail"><br>
+	<input type="text" value="Поле уже заполнено" placeholder="Номер телефона"><br>
+
+	<hr>
+	&larr; <a href="http://dedushka.org/uroki/6530.html">Вернуться к уроку</a>
+
+<script>
+(function setPlaceHolders(){
+var input = document.getElementsByTagName('input'); // get all text fields
+var cls = "placeholdr"; // set name of the class
+
+if (input) { // if fields found
+	for (var i=0; i < input.length; i++) {
+		var t = input[i];
+		var txt = t.getAttribute("placeholder");
+
+		if (txt.length > 0) { // if placeholder found
+			t.className = t.value.length == 0 ? t.className+" "+cls : t.className; // add class
+			t.value = t.value.length > 0 ? t.value : txt; // if no value found
+
+			t.onfocus = function() { // on focus
+				this.className = this.className.replace(cls);
+				this.value = this.value == this.getAttribute("placeholder") ? "" : this.value;
+			}
+
+			t.onblur = function() { // on focus out
+				if (this.value.length == 0) {
+					this.value = this.getAttribute("placeholder");
+					this.className = this.className+" "+cls; // add class
+				}
+			}
+		}
+	}
+}
+})();
+</script>
+</div>
+</body>
+</html>

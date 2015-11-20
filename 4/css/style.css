@@ -1,0 +1,142 @@
+/* Reset */
+
+* {margin: 0; padding: 0;}
+
+footer, header, nav, main, section {display: block;}
+
+a {text-decoration: none;}
+
+ul, li {list-style: none;}
+
+input {outline: none; border: none;}
+
+input[type="submit"] {cursor: pointer;}
+
+img {max-width: 100%;}
+
+/* Box Model */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {clear: both;}
+
+/* Basic */
+
+.left {float: left;}
+.right {float: right;}
+
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+.search::after,
+.top-menu::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* Header */
+
+.area {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    min-height: 120px;
+}
+
+.logo {
+    width: 30%;
+    padding: 29px 0 0 17px;
+}
+
+.search {
+    position: relative;
+    margin: 20px -13px 0 0;
+    padding: 0 13px;
+    width: 33%;
+    height: 35px;
+    background: #76b2c3 url(../images/search-icon.png) no-repeat right 22px center;
+    opacity: .9;
+}
+
+.search:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    background: url(../images/search-icon2.png) no-repeat;
+    width: 13px;
+    height: 46px;
+    opacity: .9;
+}
+
+.search span,
+.search a {
+    margin-right: 10px;
+    color: white;
+    font: 0.81em 'ProximaNovaRegular';
+}
+
+.top-menu {
+    width: 70%;
+    height: 66px;
+}
+
+.top-menu a {
+    margin-right: 8.5%;
+    font: 0.94em 'ProximaNovaRegular';
+    color: #668333;
+    text-transform: uppercase;
+}
+
+.top-menu a:last-child {margin-right: 16px;}
+
+.top-menu .active {color: #4999af;}
+
+.banner-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 324px;
+    background: #3c8ca1;
+    width: 45%;
+    height: 157px;
+    opacity: 0.95;
+    color: white;
+    font: 2.13em 'ProximaNovaRegular';
+    padding: 25px 0 0 19px;
+}
+
+.banner-box span {
+    font-family: 'ProximaNovaSemibold';
+}
+
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #555;
+    color: #fff;
+}
