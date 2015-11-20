@@ -43,7 +43,11 @@ img {max-width: 100%;}
 .text-center {text-align: center;}
 
 .search::after,
-.top-menu::after {
+.top-menu::after,
+.over1::after,
+.over2::after,
+.over3::after,
+.more-button::after {
     content: '';
     display: inline-block;
     height: 100%;
@@ -77,8 +81,7 @@ header {
     padding: 0 13px;
     width: 33%;
     height: 35px;
-    background: #76b2c3 url(../images/search-icon.png) no-repeat right 22px center;
-    opacity: .9;
+    background: rgba(118,178,195,.9) url(../images/search-icon.png) no-repeat right 22px center;
 }
 
 .search:before {
@@ -95,7 +98,7 @@ header {
 .search a {
     margin-right: 10px;
     color: white;
-    font: 0.81em 'ProximaNovaRegular';
+    font: .81em 'ProximaNovaRegular';
 }
 
 .top-menu {
@@ -108,29 +111,119 @@ header {
     font: 0.94em 'ProximaNovaRegular';
     color: #668333;
     text-transform: uppercase;
+    transition: all .5s;
 }
+
+.top-menu a:hover {font: 1em 'ProximaNovaBold';}
 
 .top-menu a:last-child {margin-right: 16px;}
 
 .top-menu .active {color: #4999af;}
 
-.banner-box {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 324px;
-    background: #3c8ca1;
-    width: 45%;
-    height: 157px;
-    opacity: 0.95;
-    color: white;
-    font: 2.13em 'ProximaNovaRegular';
-    padding: 25px 0 0 19px;
+/* Header end */
+
+/* Main */
+
+main {
+    background: #f3eeea;
 }
 
-.banner-box span {
-    font-family: 'ProximaNovaSemibold';
+.blocks {padding: 29px 0;}
+
+.boxes {
+    position: relative;
+    width: 32%;
+    height: 200px;
+    color: white;
 }
+
+.boxes:nth-child(2) {margin: 0 2%;}
+
+.boxes h1 {
+    position: absolute;
+    top: 92px;
+    right: 20px;
+    text-shadow: .5px .9px 5px rgba(0,0,0,.6);
+    font: 2.81em 'ProximaNovaSemibold';
+    text-transform: uppercase;
+}
+
+.over1,
+.over2,
+.over3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 82%;
+    height: 46px;
+    font: 1em 'ProximaNovaRegular';
+}
+
+.over1 {
+    background: rgba(70,149,168,.8) url(../images/circle.png) right 12px center no-repeat;
+    padding-left: 20px;
+}
+
+.over2 {
+    background: rgba(117,136,71,.8) url(../images/circle.png) right 12px center no-repeat;
+    padding-left: 27px;
+}
+
+.over3 {
+    background: rgba(233,128,111,.8) url(../images/circle.png) right 12px center no-repeat;
+    padding-left: 22px;
+}
+
+.news {
+    min-height: 253px;
+    padding-bottom: 53px;
+}
+
+.upcoming-events,
+.sevenoaks {width: 50%;}
+
+.upcoming-events {
+    padding-right: 1.9%;
+}
+
+.sevenoaks {
+    padding-left: 1.9%;
+}
+
+.sevenoaks p {
+    font: 0.88em 'ProximaNovaRegular';
+    color: #5f5f5f;
+}
+
+.sevenoaks a {
+    font: 0.88em 'ProximaNovaBold';
+    color: #f1715e;
+    text-transform: uppercase;
+}
+
+.upcoming-events h2,
+.sevenoaks h2 {
+    color: #4999af;
+    font: 1.38em 'ProximaNovaSemibold';
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+.events {
+    height: 76px;
+    border-top: 1px solid #d2cdc9;
+}
+
+.events .more-button {
+    display: block;
+    width: 90px;
+    height: 33px;
+    background: #4999af;
+    color: #f3eeea;
+    font: 1em 'ProximaNovaRegular';
+    text-transform: uppercase;
+}
+
 
 
 #scrollUp {
