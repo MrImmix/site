@@ -5,18 +5,39 @@
 /** RESET AND LAYOUT
 ===================================*/
 
+.slide1 {
+    background: url(../images/slide.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 520px;
+}
+
+.slide2 {
+    background: url(../images/slide2.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 520px;
+}
+
+.slide3 {
+    background: url(../images/slide3.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 520px;
+}
+
+.slide4 {
+    background: url(../images/slide4.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 520px;
+}
+
 .bx-wrapper {
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
-    overflow: hidden;
-    height: 520px;
-}
-
-.bx-wrapper img {
-	width: 100%;
-	display: block;
 }
 
 /** THEME
